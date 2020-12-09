@@ -7,7 +7,10 @@ function DisplayBalance({ title, value, color="black", size="tiny" }) {
       <Statistic.Label style={{textAlign: 'left'}}>
         {title}
       </Statistic.Label>
-      <Statistic.Value>{value}</Statistic.Value>
+      <Statistic.Value>
+        <span style={{color: 'black'}}>$</span>
+        {value}
+      </Statistic.Value>
     </Statistic>
   )
 }
